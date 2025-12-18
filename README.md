@@ -1,1 +1,2 @@
-# Punto_venta
+# Punto de venta RID
+Practicas Profesionales II
