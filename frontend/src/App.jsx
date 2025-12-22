@@ -1,20 +1,50 @@
 import { useEffect, useState } from 'react'
+import { getUsers, createUser } from './api/users.api'
 
 function App() {
-  const [mensaje, setMensaje] = useState('')
+  const [users, setUsers] = useState([])
+  const [name, setName] = useState('')
 
   useEffect(() => {
-    fetch('http://localhost:3000/api/saludo')
-      .then(res => res.json())
-      .then(data => setMensaje(data.mensaje))
-      .catch(err => console.error(err))
+    getUsers().then(setUsers)
   }, [])
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+
+    const newUser = {
+      name
+    }
+
+    const created = await createUser(newUser)
+    setUsers([...users, created])
+
+    setName('')
+  }
 
   return (
     <div className="p-8">
-      <h1 className="text-3xl font-bold">
-        {mensaje}
-      </h1>
+      <h1 className="text-2xl font-bold mb-4">Usuarios</h1>
+
+      <form onSubmit={handleSubmit} className="mb-6">
+        <input
+          className="border p-2 mr-2"
+          placeholder="Nombre"
+          value={name}
+          onChange={e => setName(e.target.value)}
+        />
+        <button className="bg-blue-500 text-white px-4 py-2">
+          Crear
+        </button>
+      </form>
+
+      <ul>
+        {users.map(user => (
+          <li key={user.id}>
+            {user.name}
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }

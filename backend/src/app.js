@@ -6,7 +6,7 @@ import userRoutes from './routes/users.routes.js'
 dotenv.config()
 
 const app = express()
-
+//conexion con frontend
 app.use(cors({ origin: 'http://localhost:5173' }))
 app.use(express.json())
 
