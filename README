@@ -1,13 +1,11 @@
 <div align="center">
 
-# 🛒 **Punto de Venta RID**
-### 📘 *Prácticas Profesionales II*
+<h1>🛒 Punto de Venta RID</h1>
+<h3>📘 Prácticas Profesionales II</h3>
 
----
-
-![Status](https://img.shields.io/badge/Estado-En%20desarrollo-blue)
-![Licencia](https://img.shields.io/badge/Licencia-MIT-green)
-![Lenguaje](https://img.shields.io/badge/Lenguaje-JavaScript-yellow)
+<img src="https://img.shields.io/badge/Estado-En%20desarrollo-blue.svg" />
+<img src="https://img.shields.io/badge/Licencia-MIT-green.svg" />
+<img src="https://img.shields.io/badge/Lenguaje-JavaScript-yellow.svg" />
 
 </div>
 
@@ -19,17 +17,15 @@
 
 ---
 
-## 🧩 Características principales
-- ✅ Registro de productos  
-- ✅ Control de ventas  
-- ✅ Gestión de clientes  
-- ✅ Interfaz amigable  
+## ✅ Características principales
+- ✔️ Registro de productos  
+- ✔️ Control de ventas  
+- ✔️ Gestión de clientes  
+- ✔️ Interfaz amigable  
 
 ---
 
 ## 🛠️ Tecnologías utilizadas
 - 💻 **Frontend:** HTML, CSS, JavaScript  
-- 🗄️ **Backend:** (agrega aquí si aplica)  
-- 🧠 **Base de datos:** (agrega aquí si aplica)
-
----
+- ⚙️ **Backend:** (agrega aquí si aplica)  
+- 🗄️ **Base de datos:** (agrega aquí si aplica)
