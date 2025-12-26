@@ -2,6 +2,9 @@ import { useEffect, useState } from 'react'
 import { getUsers, createUser } from './api/users.api'
 
 function App() {
+
+  //return <AppRouter />
+
   const [users, setUsers] = useState([])
   const [name, setName] = useState('')
 
@@ -46,6 +49,7 @@ function App() {
         ))}
       </ul>
     </div>
+    
   )
 }
 
