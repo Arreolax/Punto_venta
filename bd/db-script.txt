@@ -1,0 +1,2 @@
+CREATE DATABASE punto_venta;
+USE punto_venta;
